@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="task.css">
 </head>
+
 <body>
     <button class="btn1" id="openbutton">+</button>
     <main>
@@ -17,66 +18,13 @@
             <button class="done">Done</button>
         </div>
         <h1>To do</h1>
-        <div class="grid1" id="grid">
+        <div class="grid1" id="todo">
 
-            <!----
-            <div class=" box">
-                <p>Lorem ipsum dolor sit amet
-                    consectetur adipisicing.</p>
-                <input type="checkbox" class="check" disabled>
-            </div>
-            <div class=" box">
-                <p>Lorem ipsum dolor sit amet
-                    consecteturLorem ipsum dolor sit amet
-                    consectetur </p>
-                <input type="checkbox" class="check" checked>
-            </div>
-            <div class=" box">
-                <p>Lorem ipsum dolor sit amet
-                    consectetur adipisicing.</p>
-                <input type="checkbox" class="check" checked>
-            </div>
-            <div class="box">
-                <p>Lorem ipsum dolor sit amet
-                    consecteturLorem ipsum dolor sit amet
-                    consectetur </p>
-                <input type="checkbox" class="check" checked>
-            </div>
-            <div class=" box">
-                <p>Lorem ipsum dolor sit amet
-                    consecteturLorem ipsum dolor sit amet
-                    consectetur </p>
-                <input type="checkbox" class="check" checked>
-            </div>-->
         </div>
 
         <h1>Done</h1>
-        <div class="grid1">
-            <div class=" box">
-                <p>Lorem ipsum dolor sit amet
-                    consecteturLorem ipsum dolor sit amet
-                    consectetur </p>
-            </div>
-            <div class="box">
-                <p>Lorem ipsum dolor sit amet
-                    consecteturLorem ipsum dolor sit amet
-                    consectetur </p>
-            </div>
-            <div class="box">
-                <p>Lorem ipsum dolor sit amet
-                    consecteturLorem ipsum dolor sit amet
-                    consectetur </p>
-            </div>
-            <div class=" box">
-                <p>Lorem ipsum dolor sit amet
-                    consecteturLorem ipsum dolor sit amet
-                    consectetur </p>
-            </div>
-            <div class=" box">
-                <p>Lorem ipsum dolor sit amet
-                    consecteturLorem ipsum dolor sit amet
-                    consectetur </p>
-            </div>
+        <div class="grid1" id="donetask">
+
         </div>
     </main>
 
@@ -91,39 +39,45 @@
             document.getElementById("popup").style.display = "block";
         }
         document.getElementById("openbutton").addEventListener('click', add);
-        
+
         let tasks = [
-                {
-                    title: "do the task",
-                    done: true
-                },
-                {
-                    title: "complete the tasks",
-                    done: true
-                },
-                {
-                    title: "Prepare modal",
-                    done: true
-                },
-                {
-                    title: "create button",
-                    done: true
-                },
-                {
-                    title: "check box ",
-                    done: true
-                },
-                {
-                    title: " hover  it",
-                    done: true
-                },
-                {
-                    title: "task3",
-                    done: false
-                }];
+            {
+                title: "do the task",
+                done: true
+            },
+            {
+                title: "complete the tasks",
+                done: true
+            },
+            {
+                title: "Prepare modal",
+                done: true
+            },
+            {
+                title: "create button",
+                done: true
+            },
+            {
+                title: "check box ",
+                done: true
+            },
+            {
+                title: " hover  it",
+                done: true
+            },
+            {
+                title: "task3",
+                done: false
+            }];
 
-document.getElementById("grid").innerHTML=tasks.map(task=>'<div class="box"><p>'+task.title+'</p><input type="checkbox" class="check"></div>').join(" ");
-
+        document.getElementById("todo").innerHTML = tasks
+            .map(task => '<div class="box"><p>' + task.title + '</p><input type="checkbox" class="check"></div>')
+            .join(" ");
+        
+        document.getElementById("donetask").innerHTML = tasks
+          .filter(task => task.done == true)
+            .map(task => '<div class="box"><p>' + task.title + '</p><input type="checkbox" class="check"></div>')
+            .join(" ");
     </script>
 </body>
 
