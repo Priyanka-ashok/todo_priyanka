@@ -6,8 +6,60 @@
    
 }
 body{
-    margin: 20px;
     background-color: #f6f6f6;
+}
+.modal
+{
+    display: none;
+    border: 1px solid black;
+    width: 100%;
+    position:fixed;
+    z-index:2;
+    bottom:10px;
+    background-color: #e6e6e6;
+}
+textarea
+{
+    height: 300px;
+    width: 100%;
+}
+.done
+{
+    height:40px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
+.button
+{
+    position: relative;
+}
+.closebtn{
+    height: 30px;
+    width:20px;
+    color:grey;
+    border: 1px solid black;
+    cursor:pointer;
+   
+}
+.btn1{
+    width:40px;
+    height:40px;
+    background-color: red;
+    color: white;
+    border-radius:50%;
+    bottom:70px;
+    position: fixed;
+    z-index: 1;
+    font-size: 20px;
+    border:none;
+    bottom: 10px;
+    right: 12px;
+    cursor:pointer;
+}
+main{
+    margin: 20px;
+   padding-top: 50px;
    margin: 0 auto;
    max-width: 1140px;
 }
@@ -42,7 +94,7 @@ p{
     width: 40px;
     height:30px;
    position: absolute;
-   background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+   
 }
 .grid2 p
 {

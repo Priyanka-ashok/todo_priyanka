@@ -7,71 +7,89 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="task.css">
 </head>
-
 <body>
-   <main>
-    <h1>To do</h1>
-    <div class="grid1">
-        <div class=" box">
-            <p>Lorem ipsum dolor sit amet
-                consectetur adipisicing.</p>
-            <input type="checkbox" class="check" checked>
+    <button class="btn1" id="openbutton">+</button>
+    <main>
+        <div class="modal" id="popup">
+            <button class="closebtn" id="closebutton">x</button>
+            <h1>To do</h1>
+            <textarea></textarea>
+            <button class="done">Done</button>
         </div>
-        <div class=" box">
-            <p>Lorem ipsum dolor sit amet
-                consecteturLorem ipsum dolor sit amet
-                consectetur </p>
+        <h1>To do</h1>
+        <div class="grid1">
+            <div class=" box">
+                <p>Lorem ipsum dolor sit amet
+                    consectetur adipisicing.</p>
                 <input type="checkbox" class="check" checked>
-        </div>
-        <div class=" box">
-            <p>Lorem ipsum dolor sit amet
-                consectetur adipisicing.</p>
-            <input type="checkbox" class="check" checked>
-        </div>
-        <div class="box">
-            <p>Lorem ipsum dolor sit amet
-                consecteturLorem ipsum dolor sit amet
-                consectetur </p>
+            </div>
+            <div class=" box">
+                <p>Lorem ipsum dolor sit amet
+                    consecteturLorem ipsum dolor sit amet
+                    consectetur </p>
                 <input type="checkbox" class="check" checked>
-        </div>
-        <div class=" box">
-            <p>Lorem ipsum dolor sit amet
-                consecteturLorem ipsum dolor sit amet
-                consectetur </p>
+            </div>
+            <div class=" box">
+                <p>Lorem ipsum dolor sit amet
+                    consectetur adipisicing.</p>
                 <input type="checkbox" class="check" checked>
+            </div>
+            <div class="box">
+                <p>Lorem ipsum dolor sit amet
+                    consecteturLorem ipsum dolor sit amet
+                    consectetur </p>
+                <input type="checkbox" class="check" checked>
+            </div>
+            <div class=" box">
+                <p>Lorem ipsum dolor sit amet
+                    consecteturLorem ipsum dolor sit amet
+                    consectetur </p>
+                <input type="checkbox" class="check" checked>
+            </div>
         </div>
-    </div>
 
 
-    <h1>Done</h1>
-    <div class="grid2">
-        <div class=" box">
-            <p>Lorem ipsum dolor sit amet
-                consecteturLorem ipsum dolor sit amet
-                consectetur </p>
+        <h1>Done</h1>
+        <div class="grid2">
+            <div class=" box">
+                <p>Lorem ipsum dolor sit amet
+                    consecteturLorem ipsum dolor sit amet
+                    consectetur </p>
+            </div>
+            <div class="box">
+                <p>Lorem ipsum dolor sit amet
+                    consecteturLorem ipsum dolor sit amet
+                    consectetur </p>
+            </div>
+            <div class="box">
+                <p>Lorem ipsum dolor sit amet
+                    consecteturLorem ipsum dolor sit amet
+                    consectetur </p>
+            </div>
+            <div class=" box">
+                <p>Lorem ipsum dolor sit amet
+                    consecteturLorem ipsum dolor sit amet
+                    consectetur </p>
+            </div>
+            <div class=" box">
+                <p>Lorem ipsum dolor sit amet
+                    consecteturLorem ipsum dolor sit amet
+                    consectetur </p>
+            </div>
         </div>
-        <div class="box">
-            <p>Lorem ipsum dolor sit amet
-                consecteturLorem ipsum dolor sit amet
-                consectetur </p>
-        </div>
-        <div class="box">
-            <p>Lorem ipsum dolor sit amet
-                consecteturLorem ipsum dolor sit amet
-                consectetur </p>
-        </div>
-        <div class=" box">
-            <p>Lorem ipsum dolor sit amet
-                consecteturLorem ipsum dolor sit amet
-                consectetur </p>
-        </div>
-        <div class=" box">
-            <p>Lorem ipsum dolor sit amet
-                consecteturLorem ipsum dolor sit amet
-                consectetur </p>
-        </div>
-    </div>
     </main>
+
+
+    <script>
+        function close() {
+            document.getElementById("popup").style.display = "none";
+        }
+        document.getElementById("closebutton").addEventListener('click', close);
+        function add() {
+            document.getElementById("popup").style.display = "block";
+        }
+        document.getElementById("openbutton").addEventListener('click', add);
+    </script>
 </body>
 
 </html>
