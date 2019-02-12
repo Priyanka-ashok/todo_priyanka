@@ -108,16 +108,8 @@ p{
     {
         display:grid;
         grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(2,2fr);
+      
         grid-gap:10px;
-    }
-    .grid2
-    {
-        display:grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(2,2fr);
-        grid-gap:10px;
-
     }
     .box{
         height: 265px;
