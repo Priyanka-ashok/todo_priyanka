@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
     <title>Todo task</title>
     <meta name="viewport" content="width=device-width ,initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="task.css">
 </head>
-
 <body>
     <button class="btn1" id="openbutton">+</button>
     <main>
@@ -19,16 +17,19 @@
         </div>
         <h1>To do</h1>
         <div class="grid1" id="todo">
-
+                <label class="checkbox-main">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
         </div>
-
         <h1>Done</h1>
         <div class="grid1" id="donetask">
-
+                <label class="checkbox-main">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
         </div>
     </main>
-
-
     <script>
         function close() {
             document.getElementById("popup").style.display = "none";
@@ -43,7 +44,7 @@
         let tasks = [
             {
                 title: "do the task",
-                done: true
+                done: false
             },
             {
                 title: "complete the tasks",
@@ -59,7 +60,7 @@
             },
             {
                 title: "check box ",
-                done: true
+                done: false
             },
             {
                 title: " hover  it",
@@ -81,4 +82,4 @@
     </script>
 </body>
 
-</html>
+</html
